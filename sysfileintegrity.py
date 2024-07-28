@@ -2,7 +2,7 @@
 
 import hashlib
 import os
-
+import time
 """# **Generating the file hash**"""
 
 def generate_file_hash(file_path):
@@ -35,7 +35,7 @@ with open("baseline.txt","w") as file:
 
 """# **Writing a Monitor to check the integrity of the files.**"""
 
-import time
+
 
 def monitor(dir,baseline_hash_file="baseline.txt"):
   with open(baseline_hash_file,"r") as file:
